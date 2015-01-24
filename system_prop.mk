@@ -3,6 +3,7 @@
 
 # audio
 PRODUCT_PROPERTY_OVERRIDES += \
+    lpa.decode=true \
     persist.audio.fluence.mode=endfire \
     persist.audio.handset.mic=digital \
     ro.qc.sdk.audio.fluencetype=fluence
@@ -10,7 +11,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # radio
 PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/system/lib/libsec-ril.so \
-    ro.telephony.ril.config=newDialCode \
     ro.telephony.ril_class=d2lteRIL
 
 # gps
